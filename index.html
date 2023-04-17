@@ -159,6 +159,104 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-thread-pool" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/04/16/thread-pool/">线程池在.NET框架下的管理</a>
+    </h1>
+  
+
+        
+        <a href="/2023/04/16/thread-pool/" class="archive-article-date">
+  	<time datetime="2023-04-16T08:51:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-04-16</time>
+</a>
+        
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>业务中遇到一个实际的问题，在数据进行分析的同时，需要将开销大的进行文件读写工作异步地执行并与主任务分开。在这样的需求下，多线程自然而然就是需要考虑的首选方法。而对于实际业务中，线程虽然可以提高性能，但同时创建线程对于计算机系统又是十分昂贵的操作(主要体现在Stack空间的分配)。 因此在实际使用中，我们还要搭配线程池才能做到更好的性能优化</p>
+        
+      
+      
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">后端开发</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2023/04/16/thread-pool/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "Tuk4GgWHcbt0ASabL37D4Abe-gzGzoHsz",
+            app_key: "tyVhum92ygOHhKujzT1Vda5L",
+            placeholder: "Just go go",
+            avatar:"mm"
+        });
+    }
+</script>
+  </section>
+
+  
     <article id="post-newyork-tourism" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -180,7 +278,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="纽约初印象"><a href="#纽约初印象" class="headerlink" title="纽约初印象"></a>纽约初印象</h3><p>纽约作为超级大都市，一直都是各国旅客前往美国的首选目的地。作为一个外乡的游子，对于纽约的城市风貌自然也会感到神往。 短短3个月时间里，我前往了纽约两次。一次是与国内的朋友相约，要在纽约进行跨年活动；另一次则是与美国这边的朋友前往纽约完成上一次旅行没有完成的遗憾。在来到纽约之前，无数人对纽约有自己的理解，但总体是负面的。这个城市的脏乱差， 随处飘散的大麻味，总是每一个人来过这里调侃纽约避不开的话题，但我对于纽约却有自己的想法，“来纽约跨年吧”，不知是小时候几岁的我，听到了这句话后心里便种下了一颗种子。再加上后来习惯了成都中的夜夜笙歌，来到美国总是感到无所适从，纽约的斑斓生活就像无聊单调的调剂，给我留下了无数的遐想。</p>
+        <p>纽约作为超级大都市，一直都是各国旅客前往美国的首选目的地。作为一个外乡的游子，对于纽约的城市风貌自然也会感到神往。 短短3个月时间里，我前往了纽约两次。一次是与国内的朋友相约，要在纽约进行跨年活动；另一次则是与美国这边的朋友前往纽约完成上一次旅行没有完成的遗憾。在来到纽约之前，无数人对纽约有自己的理解，但总体是负面的。这个城市的脏乱差， 随处飘散的大麻味，总是每一个人来过这里调侃纽约避不开的话题，但我对于纽约却有自己的想法，“来纽约跨年吧”，不知是小时候几岁的我，听到了这句话后心里便种下了一颗种子。再加上后来习惯了成都中的夜夜笙歌，来到美国总是感到无所适从，纽约的斑斓生活就像无聊单调的调剂，给我留下了无数的遐想。</p>
         
       
       
@@ -1049,104 +1147,6 @@
   </section>
 
   
-    <article id="post-note" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/01/note/">一点简单的生活日记</a>
-    </h1>
-  
-
-        
-        <a href="/2021/04/01/note/" class="archive-article-date">
-  	<time datetime="2021-04-01T16:25:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-02</time>
-</a>
-        
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <img src="https://oss1222.oss-cn-chengdu.aliyuncs.com/972790.jpeg" />
-        
-      
-      
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/04/01/note/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'false' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "Tuk4GgWHcbt0ASabL37D4Abe-gzGzoHsz",
-            app_key: "tyVhum92ygOHhKujzT1Vda5L",
-            placeholder: "Just go go",
-            avatar:"mm"
-        });
-    }
-</script>
-  </section>
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next</a>
@@ -1260,10 +1260,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">旅行</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
@@ -1273,6 +1269,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">front end</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">旅行</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">后端开发</a>
               </li>
             
             <div class="clearfix"></div>
