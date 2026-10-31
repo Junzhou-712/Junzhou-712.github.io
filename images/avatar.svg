@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <rect width="400" height="500" fill="#f2f2f4"/>
+
+  <g stroke="#3a3a3a" stroke-linecap="round" stroke-linejoin="round">
+    <!-- skinny legs (outline then fill) -->
+    <path d="M168 430 L162 505 M232 430 L238 505" stroke-width="34" fill="none"/>
+    <path d="M168 430 L162 505 M232 430 L238 505" stroke="#f3d65e" stroke-width="24" fill="none"/>
+
+    <!-- pear-shaped body, no neck -->
+    <path d="M200 52
+             C 234 52 250 84 254 126
+             C 260 168 292 204 314 262
+             C 336 324 322 404 262 436
+             C 230 452 170 452 138 436
+             C 78 404 64 324 86 262
+             C 108 204 140 168 146 126
+             C 150 84 166 52 200 52 Z"
+          fill="#f3d65e" stroke-width="6"/>
+
+    <!-- big milky belly -->
+    <path d="M200 238
+             C 260 236 296 284 294 336
+             C 292 392 252 424 200 424
+             C 148 424 108 392 106 336
+             C 104 284 140 240 200 238 Z"
+          fill="#f4eedf" stroke-width="5"/>
+
+    <!-- eyes: teal ring + tiny pupil -->
+    <circle cx="170" cy="98" r="12" fill="#d6f1ea" stroke="#5fb3a4" stroke-width="5"/>
+    <circle cx="230" cy="98" r="12" fill="#d6f1ea" stroke="#5fb3a4" stroke-width="5"/>
+    <circle cx="170" cy="98" r="6" fill="#222" stroke="none"/>
+    <circle cx="230" cy="98" r="6" fill="#222" stroke="none"/>
+
+    <!-- smug little mouth -->
+    <path d="M186 128 Q 198 134 212 127" fill="none" stroke-width="4"/>
+
+    <!-- arms (outline then fill) -->
+    <path d="M142 196 C 104 236 106 288 158 300 M258 196 C 296 236 294 288 242 300" stroke-width="44" fill="none"/>
+    <path d="M142 196 C 104 236 106 288 158 300 M258 196 C 296 236 294 288 242 300" stroke="#f3d65e" stroke-width="34" fill="none"/>
+
+    <!-- grey hands patting the belly: fingers outline -->
+    <g stroke-width="17" fill="none">
+      <path d="M164 290 L188 278 M166 298 L192 294 M165 306 L191 310 M161 313 L183 326"/>
+      <path d="M236 290 L212 278 M234 298 L208 294 M235 306 L209 310 M239 313 L217 326"/>
+    </g>
+    <circle cx="160" cy="300" r="19" fill="#7a7a7a" stroke-width="5"/>
+    <circle cx="240" cy="300" r="19" fill="#7a7a7a" stroke-width="5"/>
+    <g stroke="#7a7a7a" stroke-width="9" fill="none">
+      <path d="M164 290 L188 278 M166 298 L192 294 M165 306 L191 310 M161 313 L183 326"/>
+      <path d="M236 290 L212 278 M234 298 L208 294 M235 306 L209 310 M239 313 L217 326"/>
+    </g>
+    <!-- thumbs -->
+    <path d="M156 284 L162 268 M244 284 L238 268" stroke-width="17" fill="none"/>
+    <path d="M156 284 L162 268 M244 284 L238 268" stroke="#7a7a7a" stroke-width="9" fill="none"/>
+  </g>
+</svg>
